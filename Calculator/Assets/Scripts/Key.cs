@@ -7,6 +7,8 @@ public class Key : MonoBehaviour {
     [SerializeField]
     private string key;
 
+    [SerializeField]
+    private Calculation calcu;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +21,6 @@ public class Key : MonoBehaviour {
 	}
     public void OnClick()
     {
-        Debug.Log(key);
+        calcu.SetKeyData(key);
     }
 }

@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 219422058}
   - component: {fileID: 219422061}
   m_Layer: 5
-  m_Name: 6
+  m_Name: KEY (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 6
+  calcu: {fileID: 571667397}
 --- !u!1 &223133870
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +257,7 @@ GameObject:
   - component: {fileID: 223133872}
   - component: {fileID: 223133875}
   m_Layer: 5
-  m_Name: 3
+  m_Name: KEY (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 3
+  calcu: {fileID: 571667397}
 --- !u!1 &269847048
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +541,7 @@ GameObject:
   - component: {fileID: 349980606}
   - component: {fileID: 349980609}
   m_Layer: 5
-  m_Name: 7
+  m_Name: KEY (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,6 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 7
+  calcu: {fileID: 571667397}
 --- !u!1 &361734880
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +677,7 @@ GameObject:
   - component: {fileID: 361734882}
   - component: {fileID: 361734885}
   m_Layer: 5
-  m_Name: /
+  m_Name: KEY (/)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: /
+  calcu: {fileID: 571667397}
 --- !u!1 &381990149
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +887,7 @@ GameObject:
   - component: {fileID: 391796768}
   - component: {fileID: 391796771}
   m_Layer: 5
-  m_Name: '*'
+  m_Name: KEY (*)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1005,6 +1009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: '*'
+  calcu: {fileID: 571667397}
 --- !u!1 &421814138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1085,7 @@ GameObject:
   - component: {fileID: 513058774}
   - component: {fileID: 513058777}
   m_Layer: 5
-  m_Name: '%'
+  m_Name: KEY (%)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,6 +1207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: '%'
+  calcu: {fileID: 571667397}
 --- !u!1 &566434723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,8 +1290,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 571667396}
+  - component: {fileID: 571667397}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Calculation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,6 +1311,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &571667397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571667395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a4b8e0da2a55145a253fc0ab9fc9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keydata: []
 --- !u!1 &573960589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1542,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664151792}
+--- !u!1 &689453664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 689453665}
+  - component: {fileID: 689453667}
+  - component: {fileID: 689453666}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &689453665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689453664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 729144659}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 276, y: 400}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &689453666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689453664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 48
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 48
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &689453667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689453664}
 --- !u!1 &711986436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1795,7 @@ RectTransform:
   - {fileID: 1851330787}
   - {fileID: 1911958694}
   - {fileID: 1763972181}
+  - {fileID: 689453665}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1723,7 +1817,7 @@ GameObject:
   - component: {fileID: 738340843}
   - component: {fileID: 738340846}
   m_Layer: 5
-  m_Name: 1
+  m_Name: KEY (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1845,6 +1939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 1
+  calcu: {fileID: 571667397}
 --- !u!1 &761818837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1953,7 @@ GameObject:
   - component: {fileID: 761818839}
   - component: {fileID: 761818842}
   m_Layer: 5
-  m_Name: del
+  m_Name: KEY (del)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1980,6 +2075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: del
+  calcu: {fileID: 571667397}
 --- !u!1 &766131306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,7 +2163,7 @@ GameObject:
   - component: {fileID: 792891768}
   - component: {fileID: 792891771}
   m_Layer: 5
-  m_Name: 9
+  m_Name: KEY (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2189,6 +2285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 9
+  calcu: {fileID: 571667397}
 --- !u!1 &799980062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,7 +2669,7 @@ GameObject:
   - component: {fileID: 1251808733}
   - component: {fileID: 1251808736}
   m_Layer: 5
-  m_Name: C
+  m_Name: KEY (C)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2694,6 +2791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: c
+  calcu: {fileID: 571667397}
 --- !u!1 &1320786539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,7 +2805,7 @@ GameObject:
   - component: {fileID: 1320786541}
   - component: {fileID: 1320786544}
   m_Layer: 5
-  m_Name: 4
+  m_Name: KEY (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2829,6 +2927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 4
+  calcu: {fileID: 571667397}
 --- !u!1 &1365201736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +2941,7 @@ GameObject:
   - component: {fileID: 1365201738}
   - component: {fileID: 1365201741}
   m_Layer: 5
-  m_Name: +
+  m_Name: KEY (+)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2964,6 +3063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: +
+  calcu: {fileID: 571667397}
 --- !u!1 &1373694665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,7 +3151,7 @@ GameObject:
   - component: {fileID: 1402701165}
   - component: {fileID: 1402701168}
   m_Layer: 5
-  m_Name: 8
+  m_Name: KEY (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3173,6 +3273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 8
+  calcu: {fileID: 571667397}
 --- !u!1 &1418265654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3376,7 @@ GameObject:
   - component: {fileID: 1628477500}
   - component: {fileID: 1628477503}
   m_Layer: 5
-  m_Name: 0
+  m_Name: KEY (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3397,6 +3498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 0
+  calcu: {fileID: 571667397}
 --- !u!1 &1667970099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,7 +3808,7 @@ GameObject:
   - component: {fileID: 1763972182}
   - component: {fileID: 1763972185}
   m_Layer: 5
-  m_Name: =
+  m_Name: KEY (=)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3828,6 +3930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: =
+  calcu: {fileID: 571667397}
 --- !u!1 &1842663718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,7 +3944,7 @@ GameObject:
   - component: {fileID: 1842663720}
   - component: {fileID: 1842663723}
   m_Layer: 5
-  m_Name: 2
+  m_Name: KEY (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3963,6 +4066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 2
+  calcu: {fileID: 571667397}
 --- !u!1 &1851330786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,7 +4080,7 @@ GameObject:
   - component: {fileID: 1851330788}
   - component: {fileID: 1851330791}
   m_Layer: 5
-  m_Name: 02
+  m_Name: KEY (00)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4098,6 +4202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 00
+  calcu: {fileID: 571667397}
 --- !u!1 &1885626827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,7 +4290,7 @@ GameObject:
   - component: {fileID: 1900353939}
   - component: {fileID: 1900353942}
   m_Layer: 5
-  m_Name: '-'
+  m_Name: KEY (-)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4307,6 +4412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: '-'
+  calcu: {fileID: 571667397}
 --- !u!1 &1911958693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4426,7 @@ GameObject:
   - component: {fileID: 1911958695}
   - component: {fileID: 1911958698}
   m_Layer: 5
-  m_Name: .
+  m_Name: KEY (.)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4442,6 +4548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: .
+  calcu: {fileID: 571667397}
 --- !u!1 &1931481162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4455,7 +4562,7 @@ GameObject:
   - component: {fileID: 1931481164}
   - component: {fileID: 1931481167}
   m_Layer: 5
-  m_Name: 5
+  m_Name: KEY (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4577,6 +4684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 5
+  calcu: {fileID: 571667397}
 --- !u!1 &1999078222
 GameObject:
   m_ObjectHideFlags: 0
