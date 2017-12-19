@@ -8,6 +8,12 @@ public class Calculation : MonoBehaviour {
 
     [SerializeField]
     private List<string> keydata;  //押されたボタンを格納
+
+    [SerializeField]
+    private Texture2D texturedata; //数字テクスチャのデータ
+
+    private List<Sprite> spritedata; //計算式表示用のデータ
+
     
     //外部から押されたキーを取得
     public void SetKeyData(string key)
@@ -40,5 +46,10 @@ public class Calculation : MonoBehaviour {
         {
             keydata.Clear();
         }
+    }
+
+    Sprite DrawNumCreate()
+    {
+        
     }
 }

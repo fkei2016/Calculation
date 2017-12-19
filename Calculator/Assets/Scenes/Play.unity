@@ -1323,6 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keydata: []
+  texturedata: {fileID: 2800000, guid: d5c23f9994355c74dba0ed1d5568b128, type: 3}
 --- !u!1 &573960589
 GameObject:
   m_ObjectHideFlags: 0
