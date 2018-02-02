@@ -17,7 +17,11 @@ public class calculator : MonoBehaviour {
 	[SerializeField]
 	private Sprite[] nomalNumSpriteTexture;　//表示用数字のテクスチャ
 
-    private Toast toast = new Toast();
+    private int maxNum = 8;
+
+    private int maxNumCount = 0;
+
+    private Toast toast = new Toast();　//8桁表示用
 
     // Use this for initialization
     void Start () {
@@ -29,10 +33,15 @@ public class calculator : MonoBehaviour {
 		
 	}
 
+    /// <summary>
+    /// 数字キーを押されたときの処理
+    /// </summary>
+    /// <param name="number"></param>
 	public void PushNumKey(int number)
 	{
 
-        if (num[calculateNums] >= 10000000)
+        //8桁用の制限処理
+        if (maxNumCount >= maxNum)
         {
             //Toast.Create("最大桁数(8)を超えました");
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -42,8 +51,10 @@ public class calculator : MonoBehaviour {
             return;
         }
 
+        //小数点が押されたときの処理
 		if (number == -10)
 		{
+
 			return;
 		}
 		
@@ -72,12 +83,20 @@ public class calculator : MonoBehaviour {
 			num [calculateNums] += number;
 		}
 
+        //前に描画されているものを消す
 		viewDestroy ();
+        //新しく描画しなおす
 		view ();
 
+        //桁数のカウントアップ
+        maxNumCount++;
 
 	}
 
+    /// <summary>
+    ///特殊キーが押されたときの処理
+    /// </summary>
+    /// <param name="keyname"></param>
 	public void PushOperatorKey(char keyname)
 	{
 
@@ -120,8 +139,13 @@ public class calculator : MonoBehaviour {
             viewDestroy();
             view();
         }
-	}
 
+        //特殊キーが押されたら桁数を初期化
+        maxNumCount = 0;
+
+	}
+    
+    //数値や演算子などの描画
 	void view()
 	{
 
@@ -153,6 +177,8 @@ public class calculator : MonoBehaviour {
             }
         }
 
+
+        //イメージを生成して順番に表示
         GameObject.Find("ScoreImage").GetComponent<Image>().sprite = nomalNumSpriteTexture [number[0]];
 		for (int i = 1; i < number.Count; i++) 
 		{
@@ -163,8 +189,10 @@ public class calculator : MonoBehaviour {
                 scoreimage.localPosition.y);
             scoreimage.GetComponent<Image> ().sprite = nomalNumSpriteTexture [number [i]];
 		}
+
 	}
 
+    //数字や演算子などをすべて消す
 	void viewDestroy()
 	{
 		var objs = GameObject.FindGameObjectsWithTag ("Score");
