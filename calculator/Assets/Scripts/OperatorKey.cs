@@ -10,8 +10,12 @@ public class OperatorKey : MonoBehaviour {
 	[SerializeField]
 	private calculator calcu;
 
-	// Use this for initialization
-	void Start () {
+
+    [SerializeField]
+    private string seName;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -22,6 +26,9 @@ public class OperatorKey : MonoBehaviour {
 
 	public void PushButton()
 	{
+
+        AudioManager.Instance.PlaySE(seName);
+
 		calcu.PushOperatorKey(operatorkey);
 	}
 }

@@ -10,6 +10,9 @@ public class NumKey : MonoBehaviour {
 	[SerializeField]
 	private calculator calcu;
 
+    [SerializeField]
+    private string seName;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,6 +25,8 @@ public class NumKey : MonoBehaviour {
 
 	public void PushButton()
 	{
-		calcu.PushNumKey(num);
+        AudioManager.Instance.PlaySE(seName);
+
+        calcu.PushNumKey(num);
 	}
 }
