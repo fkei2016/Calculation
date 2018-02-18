@@ -5,7 +5,7 @@ using UnityEngine;
 public class NumKey : MonoBehaviour {
 
 	[SerializeField]
-	private int num;
+	private char num;
 
 	[SerializeField]
 	private calculator calcu;

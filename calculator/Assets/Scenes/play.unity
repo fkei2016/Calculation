@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 1
+  num: 49
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &296303472
@@ -876,6 +876,7 @@ RectTransform:
   - {fileID: 188099826}
   - {fileID: 2016273285}
   - {fileID: 1107736874}
+  - {fileID: 1543179146}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -915,6 +916,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c25e79a3bdb01d64ca5d30636c804de8, type: 3}
   - {fileID: 21300000, guid: fc85daba3c94e784c9c72ddf4e16f7fd, type: 3}
   - {fileID: 21300000, guid: 6d96439fb0489b54da880832c2706016, type: 3}
+  anserNumSpriteTexture:
+  - {fileID: 21300000, guid: c1db6efcaa1087848869beebbcc987c8, type: 3}
+  - {fileID: 21300000, guid: ec5cf5d43f0fce84083e8612720e2895, type: 3}
+  - {fileID: 21300000, guid: 10080140f2063c5419f9a2f470116e04, type: 3}
+  - {fileID: 21300000, guid: 4e96935bb3d9ea544a8a194cb45e6b31, type: 3}
+  - {fileID: 21300000, guid: 41d72ad19000efd44b37c70535f60eed, type: 3}
+  - {fileID: 21300000, guid: 280eb1637f526ce4d8b51c6c73bd81a8, type: 3}
+  - {fileID: 21300000, guid: e4b653a9c2a72c64aa7cbc770ef48a07, type: 3}
+  - {fileID: 21300000, guid: c9a18a3f16a1cf946a112f190f4a5b74, type: 3}
+  - {fileID: 21300000, guid: 50df7d287e12c7548afc46df6f01f082, type: 3}
+  - {fileID: 21300000, guid: b2bc021cedd045d42a2689154e20d36b, type: 3}
+  - {fileID: 21300000, guid: 3aca490e4e6b81f48a998a1bf3d0e0d1, type: 3}
 --- !u!1 &335316814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 5
+  num: 53
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &528392582
@@ -2112,7 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 4
+  num: 52
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &814115449
@@ -2249,7 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 3
+  num: 51
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &900878351
@@ -2523,7 +2536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 9
+  num: 57
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1087634721
@@ -2950,7 +2963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 8
+  num: 56
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1264878613
@@ -3235,7 +3248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 6
+  num: 54
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1424917897
@@ -3708,6 +3721,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1543179145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1543179146}
+  - component: {fileID: 1543179148}
+  - component: {fileID: 1543179147}
+  m_Layer: 5
+  m_Name: AnserImage
+  m_TagString: Score
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1543179146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543179145}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 297677659}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 590, y: -290}
+  m_SizeDelta: {x: 80, y: 104}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1543179147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543179145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c1db6efcaa1087848869beebbcc987c8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1543179148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543179145}
 --- !u!1 &1613888127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,7 +3923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
+  num: 48
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1651430970
@@ -3979,7 +4060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 2
+  num: 50
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1652336836
@@ -4623,7 +4704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 7
+  num: 55
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1945207872
@@ -4760,7 +4841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985ee91458c0ad74f86d8926f89c2a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: -10
+  num: 46
   calcu: {fileID: 297677660}
   seName: test
 --- !u!1 &1983344055
